@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Operations</title>
+    <script>
+        function showResults() {
+            let num = 5;
+            document.getElementById("exp").textContent = `Exp: ${Math.exp(num)}`;
+            document.getElementById("dec").textContent = `Fixed: ${Math.exp(num).toFixed(2)}`;
+            document.getElementById("str").textContent = `String: ${num.toString()}`;
+            document.getElementById("inf").textContent = `Neg Inf: ${Number.NEGATIVE_INFINITY}`;
+        }
+    </script>
+</head>
+<body onload="showResults()">
+    <h1>Number Operations</h1>
+    <p id="exp"></p>
+    <p id="dec"></p>
+    <p id="str"></p>
+    <p id="inf"></p>
+</body>
+</html>
